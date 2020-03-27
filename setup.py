@@ -1,7 +1,15 @@
 import os, sys
 import glob
 
-packages = glob.glob('*wheat')
+packages = '''
+respi-wheat
+farquhar-wheat
+elong-wheat
+growth-wheat
+senesc-wheat
+cn-wheat
+fspm-wheat
+'''.split()
 
 def sh(cmd):
     return os.system(cmd)
