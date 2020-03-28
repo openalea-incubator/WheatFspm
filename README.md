@@ -7,6 +7,10 @@ WheatFspm contains a set of sub-packages (named in git submodules):
 
 ## Developers
 
+This  package contains [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) ([in French](https://git-scm.com/book/fr/v2/Utilitaires-Git-Sous-modules)).
+
+Development is done in the different submodules.
+
 ### Cloning
 
 To clone the project, please use:
