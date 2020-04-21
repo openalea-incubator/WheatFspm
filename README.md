@@ -112,7 +112,7 @@ To run the example:
 
 ## Papier_FSPMA2016
 This example deals with the effects of leaf inclination, radiations regimes, plant density and sowing patterns on plant metabolism and grain filling during the post-flowering stages.   
-This work led to the research article [Barillot *et al.* (2019)](https://academic.oup.com/aob/article/123/4/727/5236618).
+This work led to the research article [Barillot *et al.* (2019)](https://doi.org/10.1093/aob/mcy208).
 The scripts have not been maintained in the current version but are available using tags *paper_FSPMA16* or each submodule.
 
 To run the example:
