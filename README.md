@@ -1,10 +1,11 @@
 # WheatFspm
 WheatFspm is a Functional Structural Plant Model (FSPM) of wheat based on an innovative modelling framework for a better understanding of grass morphogenesis and C-N economy in interaction with environmental conditions
 
+![alt text](_media/Vegetative_stages_topview.gif "Growing canopy")
 # Description
 WheatFspm consists in a set of sub-models (named submodules in git) which share inputs/outputs through an MTG object:
 
-![alt text](https://raw.githubusercontent.com/openalea-incubator/WheatFspm/master/WheatFspm.png "WheatFSPM workflow")
+![alt text](_media/Modular_structure.png "WheatFSPM workflow") 
 *Adapted from Gauthier et al. (2020)*
 
 * *Farquhar-Wheat*: Farquhar-based model of photosynthesis, stomatal conductance, organ temperature and transpiration.
