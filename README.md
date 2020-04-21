@@ -8,7 +8,7 @@ WheatFspm consists in a set of sub-models (named submodules in git) which share 
 *Adapted from Gauthier et al. (2020)*
 
 * *Farquhar-Wheat*: Farquhar-based model of photosynthesis, stomatal conductance, organ temperature and transpiration.
-* *Elong-Wheat*: regulation of leaf and internode elongation by C and N metabolites and coordination rules.
+* *Elong-Wheat*: regulation of leaf and internode elongation by C and N metabolites, temperature and coordination rules.
 * *Growth-Wheat*: growth in biomass of leaves, internodes and roots ; related consumption in C and N metabolites.
 * *CN-Wheat*: synthesis and degradation of C and N metabolites at organ level and allocation between tillers' organs.
 * *Respi-Wheat*: respiratory-costs related to the main biological processes.
@@ -134,7 +134,7 @@ Work in progress for simulating wheat plasticity to contrasted environments
 # Credits
 ## Authors
 * Romain BARILLOT - model designing, development and validation - [rbarillot](https://github.com/rbarillot)
-* Marion GAUTHIER (Marion.Gauthier@inrae.fr) - model designing, development and validation - [mngauthier](https://github.com/mngauthier)
+* Marion GAUTHIER - model designing, development and validation - [mngauthier](https://github.com/mngauthier)
 * Camille CHAMBON - software designing, development, deployment and optimization - [cachambon](https://github.com/cachambon)
 * Bruno ANDRIEU - model designing and validation, scientific project management - [bandrieu](https://orcid.org/0000-0002-7933-9490)
 
