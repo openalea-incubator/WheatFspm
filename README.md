@@ -28,7 +28,7 @@ WheatFspm consists in a set of sub-models (named submodules in git) which share 
     + [Developers](#developers)
 - [Usage](#usage)
   * [NEMA](#nema)
-  * [Papier_FSPMA2016](#papier-fspma2016)
+  * [Papier_FSPMA2016](#papier_fspma2016)
   * [Vegetative stages](#vegetative-stages)
   * [Scenarii_monoculms](#scenarii-monoculms)
 - [Credits](#credits)
