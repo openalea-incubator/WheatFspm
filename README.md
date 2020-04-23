@@ -1,3 +1,5 @@
+[![Documentation Status](https://readthedocs.org/projects/cn-wheat/badge/?version=latest)](https://cn-wheat.readthedocs.io/en/latest/?badge=latest)
+
 # WheatFspm
 WheatFspm is a Functional Structural Plant Model (FSPM) of wheat based on an innovative modelling framework for a better understanding of grass morphogenesis and C-N economy in interaction with environmental conditions
 
@@ -11,7 +13,7 @@ WheatFspm consists in a set of sub-models (named submodules in git) which share 
 * *Farquhar-Wheat*: Farquhar-based model of photosynthesis, stomatal conductance, organ temperature and transpiration.
 * *Elong-Wheat*: regulation of leaf and internode elongation by C and N metabolites, temperature and coordination rules.
 * *Growth-Wheat*: growth in biomass of leaves, internodes and roots ; related consumption in C and N metabolites.
-* *CN-Wheat*: synthesis and degradation of C and N metabolites at organ level and allocation between tillers' organs.
+* *CN-Wheat*: synthesis and degradation of C and N metabolites at organ level and allocation between tillers' organs. See doc at https://cn-wheat.readthedocs.io/ 
 * *Respi-Wheat*: respiratory-costs related to the main biological processes.
 * *Senesc-Wheat*: organ senescence and consequences in organ biomass, green area and remoblisation of C and N metabolites.
 * *Fspm-Wheat*: interfaces (facades) for reading/updating information between each sub-model and the MTG. Also includes the scripts to be run for using all sub-models.
