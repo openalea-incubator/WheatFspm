@@ -123,7 +123,7 @@ To run the example:
 This example deals with the early vegetative stages of wheat development. It mainly covers the processes of leaf, internode and roots growth.
 Tillering is simplified: tiller emergence is a model input while tiller metabolism and growth is approximated from that  of the main stem.
 This work led to the research article [Gauthier *et al.* (2020)](todo). Results were obtained from the tag [paper_JXBot_2020](todo).
-Code archives and a Singularity container are also available [here](todo).
+Code archives and Singularity container:[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3759714.svg)](https://doi.org/10.5281/zenodo.3759714)
  
 To run the example:
 * Open a command line interpreter in `WheatFspm\fspm-wheat\example\Vegetative_stages`
