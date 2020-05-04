@@ -1,9 +1,19 @@
 [![Documentation Status](https://readthedocs.org/projects/cn-wheat/badge/?version=latest)](https://cn-wheat.readthedocs.io/en/latest/?badge=latest)
 
 # WheatFspm
-WheatFspm is a Functional Structural Plant Model (FSPM) of wheat based on an innovative modelling framework for a better understanding of grass morphogenesis and C-N economy in interaction with environmental conditions
+WheatFspm is a Functional Structural Plant Model (FSPM) of wheat which fully integrates shoot morphogenesis and the metabolism of carbon (C) and nitrogen (N) at organ scale within a 3D representation of plant architecture. Plants are described as a collection of tillers, each consisting in individual shoot organs (lamina, sheath, internode, peduncle, chaff), a single root compartment, the grains, and a phloem.
+
+WheatFspm simulates:
+* Organ photosynthesis, temperature and transpiration from light distribution within the 3D canopy which is provided by Caribu and Adel-Wheat models ((Chelle and Andrieu, 1998) ; (Fournier *et al.*, 2003), respectively)
+* Leaf and internode elongation
+* Leaf, internode and root growth in mass
+* N acquisition, synthesis and allocation of C and N metabolites at organ level and among tiller organs
+* Senescence of shoot organs and roots
+
+Model inputs are the climatic conditions (temperature, light, humidity, CO2, wind, soil NO<sub>3</sub><sup>-</sup>) and initial dimensions, mass and metabolic composition of individual organs.
 
 ![alt text](_media/Vegetative_stages_topview.gif "Growing canopy")
+
 # Description
 WheatFspm consists in a set of sub-models (named submodules in git) which share inputs/outputs through an MTG object:
 
@@ -16,12 +26,10 @@ WheatFspm consists in a set of sub-models (named submodules in git) which share 
 * *CN-Wheat*: synthesis and degradation of C and N metabolites at organ level and allocation between tillers' organs. See doc at https://cn-wheat.readthedocs.io/ 
 * *Respi-Wheat*: respiratory-costs related to the main biological processes.
 * *Senesc-Wheat*: organ senescence and consequences in organ biomass, green area and remoblisation of C and N metabolites.
-* *Fspm-Wheat*: interfaces (facades) for reading/updating information between each sub-model and the MTG. Also includes the scripts to be run for using all sub-models.
+* *Fspm-Wheat*: is the submodule containing the interfaces (facades) for reading/updating information between each sub-model and the MTG. Also includes the scripts to be run for using all sub-models.
 
 
 # Table of Contents
-- [WheatFspm](#wheatfspm)
-- [Description](#description)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
   * [Prerequisites](#prerequisites)
@@ -30,7 +38,7 @@ WheatFspm consists in a set of sub-models (named submodules in git) which share 
     + [Developers](#developers)
 - [Usage](#usage)
   * [NEMA](#nema)
-  * [Papier_FSPMA2016](#papier_fspma2016)
+  * [Papier_FSPMA2016](#papier-fspma2016)
   * [Vegetative stages](#vegetative-stages)
   * [Scenarii_monoculms](#scenarii-monoculms)
 - [Credits](#credits)
@@ -40,13 +48,12 @@ WheatFspm consists in a set of sub-models (named submodules in git) which share 
 - [License](#license)
 
 
-
 # Installation
 
 *WheatFspm* has been tested on Windows 10 64 bit and Linux Fedora 24 64 bit.
 
 ## Prerequisites
-To install and use *WheatFspm*, you need first to install the following dependencies:
+*WheatFspm* has the following dependencies (see documentation in the links provided, instructions for their installation are given in [Installing](#installing)):
 * To run the model: 
     * [Python](http://www.python.org) >= 2.7 (not tested for Python 3)
     * [NumPy](http://www.numpy.org/) >= 1.7.2
@@ -64,6 +71,7 @@ To install and use *WheatFspm*, you need first to install the following dependen
 * To run the tests: [Nose](http://nose.readthedocs.org/) >= 1.3.0 
 
 ## Installing
+TODO: instruction environnement conda
 ### Users
 * Download WheatFspm package from https://github.com/openalea-incubator/WheatFspm/archive/master.zip
 * Extract archive
@@ -101,7 +109,13 @@ Otherelse, update each one to a specific version, branch or tag, do:
 
 # Usage
 
-The scripts to run *WheatFSPM* are located in `fspm-wheat\example`
+To date, *WheatFspm* has been used in four main contexts described below. 
+
+The scripts to run *WheatFSPM* are located in:
+* `WheatFspm\fspm-wheat\example\NEMA`
+* `WheatFspm\fspm-wheat\example\Papier_FSPMA2016`
+* `WheatFspm\fspm-wheat\example\Vegetative_stages`
+* `WheatFspm\fspm-wheat\example\Scenarii_monoculms`
 
 ## NEMA
 This example deals with the post-flowering stages of wheat developement under 3 nitrogen fertilisation regies (H0, H3 and H15). The main processes described are leaf senescence, C and N remobilisation, grain filling). During that stages, all vegetative organs have completed their growth. 
@@ -115,7 +129,7 @@ To run the example:
 ## Papier_FSPMA2016
 This example deals with the effects of leaf inclination, radiations regimes, plant density and sowing patterns on plant metabolism and grain filling during the post-flowering stages.   
 This work led to the research article [Barillot *et al.* (2019)](https://doi.org/10.1093/aob/mcy208).
-The scripts have not been maintained in the current version but are available using tags *paper_FSPMA16* or each submodule.
+The scripts have not been maintained in the current version but are available using tags *paper_FSPMA16* or each submodule listed in [Description](#description).
 
 To run the example:
 * Open a command line interpreter in `WheatFspm\fspm-wheat\example\Papier_FSPMA2016`
@@ -125,7 +139,7 @@ To run the example:
 This example deals with the early vegetative stages of wheat development. It mainly covers the processes of leaf, internode and roots growth.
 Tillering is simplified: tiller emergence is a model input while tiller metabolism and growth is approximated from that  of the main stem.
 This work led to the research article [Gauthier *et al.* (2020)](todo). Results were obtained from the tag [paper_JXBot_2020](https://github.com/openalea-incubator/WheatFspm/releases/tag/paper_JXBot_2020).
-Code archives and Singularity container  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3759714.svg)](https://doi.org/10.5281/zenodo.3759714)
+To run the model used for the paper, please download the code archives and/or the Singularity container at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3759714.svg)](https://doi.org/10.5281/zenodo.3759714)
  
 To run the example:
 * Open a command line interpreter in `WheatFspm\fspm-wheat\example\Vegetative_stages`
@@ -148,7 +162,7 @@ Work in progress for simulating wheat plasticity to contrasted environments
 ## Funding
 * [INRAE](https://www.inrae.fr/): salaries of permanent staff 
 * French Research National Agency: projects [Breedwheat](https://breedwheat.fr/) (ANR-10-BTBR-03) and [Wheatamix](https://www6.inrae.fr/wheatamix/) (ANR-13-AGRO0008): postdoctoral research of R.Barillot
-* [itk](https://www.itk.fr/en/) company: funded the PhD thesis of M.Gauthier
+* [itk](https://www.itk.fr/en/) company and [ANRT](http://www.anrt.asso.fr/fr): funded the [Cifre](http://www.anrt.asso.fr/fr/cifre-7843) PhD thesis of M.Gauthier
 
 # License
 This project is licensed under the CeCILL-C License - see file [LICENSE](LICENSE) for details
