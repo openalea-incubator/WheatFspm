@@ -50,7 +50,7 @@ WheatFspm consists in a set of sub-models (named submodules in git) which share 
 
 # Installation
 
-*WheatFspm* has been tested on Windows 10 64 bit and Linux Fedora 24 64 bit.
+*WheatFspm* has been tested on Windows 10 64 bit and Linux Fedora 24 64 bit. *WheatFspm* is now developed in Python 3.
 
 ## Prerequisites
 *WheatFspm* has the following dependencies (see documentation in the links provided, instructions for their installation are given in [Installing](#installing)):
@@ -71,7 +71,18 @@ WheatFspm consists in a set of sub-models (named submodules in git) which share 
 * To run the tests: [Nose](http://nose.readthedocs.org/) >= 1.3.0 
 
 ## Installing
-TODO: instruction environnement conda
+*WheatFspm* has to be installed in a conda environment containing all dependencies.
+
+* Install Miniconda 2 or 3 for Python 3.7: https://docs.conda.io/en/latest/miniconda.html
+* Create a new environment in an Anaconda prompt:
+   `conda create -n WheatFspm python=3.7 openalea.mtg openalea.plantgl openalea.lpy alinea.caribu alinea.astk coverage nose sphinx statsmodels -c conda-forge -c fredboudon`
+* Activate the conda environment:
+    `conda activate WheatFspm`
+* Install Adel-Wheat:
+    `conda install https://github.com/rbarillot/adel/archive/isolate_rpy.zip`
+* Install FspmWheat:
+    'todo'
+   
 ### Users
 * Download WheatFspm package from https://github.com/openalea-incubator/WheatFspm/archive/master.zip
 * Extract archive
