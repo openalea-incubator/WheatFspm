@@ -55,7 +55,7 @@ WheatFspm consists in a set of sub-models (named submodules in git) which share 
 ## Prerequisites
 *WheatFspm* has the following dependencies (see documentation in the links provided, instructions for their installation are given in [Installing](#installing)):
 * To run the model: 
-    * [Python](http://www.python.org) >= 2.7 (not tested for Python 3)
+    * [Python](http://www.python.org) >= 3.7
     * [NumPy](http://www.numpy.org/) >= 1.7.2
     * [SciPy](http://www.scipy.org/) >= 0.12.1
     * [Pandas](http://pandas.pydata.org/) >= 0.14.0 
@@ -79,7 +79,8 @@ WheatFspm consists in a set of sub-models (named submodules in git) which share 
 * Activate the conda environment:
     `conda activate WheatFspm`
 * Install Adel-Wheat:
-    `conda install https://github.com/rbarillot/adel/archive/isolate_rpy.zip`
+    Download and extract the following archive https://github.com/rbarillot/adel/archive/python3.zip (temporary branch for python 3 compatibility)
+    cd to your local reposoitory of adel and install it in your conda environment `python setup.py develop`
 * Install FspmWheat:
     'todo'
    
