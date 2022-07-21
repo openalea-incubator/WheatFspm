@@ -42,7 +42,7 @@ WheatFspm consists in a set of sub-models (named submodules in git) which share 
   * [NEMA](#nema)
   * [Papier_FSPMA2016](#papier-fspma2016)
   * [Vegetative stages](#vegetative-stages)
-  * [Scenarii_monoculms](#scenarii-monoculms)
+  * [Scenarios_monoculms](#scenarios-monoculms)
 - [Credits](#credits)
   * [Authors](#authors)
   * [Contributors](#contributors)
@@ -159,8 +159,16 @@ To run the example:
 * Open a command line interpreter in `WheatFspm\fspm-wheat\example\Vegetative_stages`
 * Run script *main.py*: `python main.py`
 
-## Scenarii_monoculms
-Work in progress for simulating wheat plasticity to contrasted environments
+## Scenarios_monoculms
+This example deals with the plasticity of leaf growth during the vegetative stages of wheat development. The growth of wheat monoculms was simulated for highly contrasting conditions of soil nitrogen concentration, incident light and planting density.
+This work led to the research article [Gauthier *et al.* (2021)](https://doi.org/10.1093/insilicoplants/diab034). Results were obtained from the following sources: [cn-wheat](https://github.com/openalea-incubator/cn-wheat/releases/tag/v2.0), [elong-wheat](https://github.com/openalea-incubator/elong-wheat/releases/tag/v3.0), [growth-wheat](https://github.com/openalea-incubator/growth-wheat/releases/tag/v2.0), [farquhar-wheat](https://github.com/openalea-incubator/farquhar-wheat/releases/tag/v2.0), [senesc-wheat](https://github.com/openalea-incubator/senesc-wheat/releases/tag/2.0), [respi-wheat](https://github.com/openalea-incubator/respi-wheat/releases/tag/v2.0) and [fspmwheat-wheat](https://github.com/openalea-incubator/fspm-wheat/releases/tag/release-2.0).
+
+To run the model used for the paper, please download the code archives at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5503312.svg)](https://doi.org/10.5281/zenodo.5503312)
+ 
+To run the example:
+* Open a command line interpreter in `WheatFspm\fspm-wheat\example\Scenarios_monoculms`
+* For a single scenraio, run the script *main.py*: `python main.py`
+* The whole set of scenarios was run in the high-performance computing center [MESO@LR](https://meso-lr.umontpellier.fr/) (Université de Montpellier, France) 
 
 # Credits
 ## Authors
