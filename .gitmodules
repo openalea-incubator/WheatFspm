@@ -31,6 +31,6 @@
     url = https://github.com/MTreestanG/adel
     branch = master
 [submodule "cn-rhizodep"]
-    path = cn-rhizodep
-    url = https://github.com/MTreestanG/cn-rhizodep
+	path = cn-rhizodep
+	url = https://github.com/MTreestanG/cn-rhizodep
     branch = main
