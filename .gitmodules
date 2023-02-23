@@ -1,24 +1,36 @@
 [submodule "senesc-wheat"]
 	path = senesc-wheat
-	url = https://github.com/openalea-incubator/senesc-wheat
+	url = https://github.com/MTreestanG/senesc-wheat
+	branch = master
 [submodule "growth-wheat"]
 	path = growth-wheat
-	url = https://github.com/openalea-incubator/growth-wheat
+	url = https://github.com/MTreestanG/growth-wheat
+	branch = master
 [submodule "fspm-wheat"]
 	path = fspm-wheat
-	url = https://github.com/openalea-incubator/fspm-wheat
+	url = https://github.com/MTreestanG/fspm-wheat
+	branch = master
 [submodule "farquhar-wheat"]
 	path = farquhar-wheat
 	url = https://github.com/openalea-incubator/farquhar-wheat
+	branch = master
 [submodule "elong-wheat"]
 	path = elong-wheat
 	url = https://github.com/openalea-incubator/elong-wheat
+	branch = master
 [submodule "cn-wheat"]
 	path = cn-wheat
-	url = https://github.com/openalea-incubator/cn-wheat
+	url = https://github.com/MTreestanG/cn-wheat
+	branch = master
 [submodule "respi-wheat"]
 	path = respi-wheat
 	url = https://github.com/openalea-incubator/respi-wheat
+	branch = master
 [submodule "adel"]
     path = adel
     url = https://github.com/MTreestanG/adel
+    branch = master
+[submodule "cn-rhizodep"]
+    path = cn-rhizodep
+    url = https://github.com/MTreestanG/cn-rhizodep
+    branch = main
