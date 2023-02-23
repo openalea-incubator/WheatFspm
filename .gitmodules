@@ -19,3 +19,6 @@
 [submodule "respi-wheat"]
 	path = respi-wheat
 	url = https://github.com/openalea-incubator/respi-wheat
+[submodule "adel"]
+    path = adel
+    url = https://github.com/MTreestanG/adel
